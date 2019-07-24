@@ -1,0 +1,90 @@
+html{
+    width: 100%;
+    font-size: 18px;
+}
+body{
+    width: 100%;    
+    margin: 0;
+}
+h1, h2, h3{
+    text-align: center;
+}
+img{
+    max-width: 99%;
+}
+
+#box-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.box{
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 2px 2px;
+}
+.box, .hidden-hack{       
+    margin: 10px 5px;  
+    width: 100%;
+}
+.content{    
+    background-color: #fcfbfb;
+    border-radius: 3px;
+    padding: 15px
+}
+
+.img-description{
+    font-size: 0.85rem;   
+    text-align: center; 
+    font-style: italic;
+}
+
+.main-text{
+    text-align: justify;
+}
+footer{
+    height: 5vh;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+#github-img{
+    max-width: 25px;   
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    .box, .hidden-hack{
+        width: 95%;
+    }
+ }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    #box-container{
+        width: 90vw;       
+    }
+    .box, .hidden-hack{
+        width: 45%;        
+    } 
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    #box-container{
+        width: 90vw;
+    }
+    .box, .hidden-hack{
+        width: 32%;
+    } 
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    #box-container{
+        width: 70vw;
+    }
+    .box, .hidden-hack{
+        width: 23%;        
+    }     
+}
