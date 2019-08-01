@@ -27,9 +27,9 @@ steps:
     serverUrl: ftp://flexgrid.peixweb.com
     username: $(ftpUser)
     password: $(ftpPassword)
-    rootDirectory: 
+    rootDirectory: /
     filePatterns: |
-            '**'
+            '/**'
             !server.js
             !README.md
     remoteDirectory: '/public_html/' 
