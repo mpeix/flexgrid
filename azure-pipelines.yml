@@ -29,6 +29,7 @@ steps:
     password: $(ftpPassword)
     rootDirectory: 
     filePatterns: |
+            '**'
             !server.js
             !README.md
     remoteDirectory: '/public_html/' 
