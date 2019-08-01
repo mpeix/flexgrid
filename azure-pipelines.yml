@@ -28,10 +28,7 @@ steps:
     username: $(ftpUser)
     password: $(ftpPassword)
     rootDirectory: $(Build.SourcesDirectory)
-    filePatterns: |
-            '/**'
-            !server.js
-            !README.md
+    filePatterns: '**'
     remoteDirectory: '/public_html/' 
     #clean: false 
     #cleanContents: false # Required when clean == False
