@@ -27,7 +27,7 @@ steps:
     serverUrl: ftp://flexgrid.peixweb.com
     username: $(ftpUser)
     password: $(ftpPassword)
-    rootDirectory: .\
+    rootDirectory: $(Build.SourcesDirectory)
     filePatterns: |
             '/**'
             !server.js
