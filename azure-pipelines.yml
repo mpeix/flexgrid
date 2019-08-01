@@ -29,7 +29,7 @@ steps:
     password: $(ftpPassword)
     rootDirectory: $(Build.SourcesDirectory)
     filePatterns: |
-            **
+            **/*
             !server.js
     remoteDirectory: '/public_html/' 
     clean: true 
