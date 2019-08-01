@@ -25,8 +25,8 @@ steps:
     credentialsOption: inputs
     #serverEndpoint: ftp:
     serverUrl: flexgrid.peixweb.com
-    username: __
-    password: __
+    username: $(ftpUser)
+    password: $(ftpPassword)
     rootDirectory: 
     filePatterns: |
             !server.js
