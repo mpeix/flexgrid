@@ -1,0 +1,38 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
+
+# FTP upload
+# Upload files using FTP
+- task: FtpUpload@2
+  inputs:
+    credentialsOption: inputs
+    #serverEndpoint: ftp:
+    serverUrl: ftp://flexgrid.peixweb.com
+    username: $(ftpUser)
+    password: $(ftpPassword)
+    rootDirectory: $(Build.SourcesDirectory)
+    filePatterns: |
+            **/**
+            !server.js
+    remoteDirectory: '/public_html/' 
+    clean: true 
+    cleanContents: true
+    preservePaths: true
+    #trustSSL: false
