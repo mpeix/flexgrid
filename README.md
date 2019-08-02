@@ -1,5 +1,6 @@
 # Simple grid using CSS FLEX
 
+Live demo [here](https://flexgrid.peixweb.com)
 
 ## Motivation
 I am a fan of css frameworks like [Foundation](https://foundation.zurb.com/) or [Bootstrap](https://getbootstrap.com/), work with their grids and components are easy and 
